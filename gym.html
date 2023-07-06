@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Fira+Sans:wght@200&family=Roboto:wght@300&family=Ubuntu+Mono&display=swap"
+        rel="stylesheet">
+    <title> Fitness Club</title>
+    <style>
+        body {
+            font-family: 'Dongle', sans-serif;
+            font-family: 'Fira Sans', sans-serif;
+            font-family: 'Roboto', sans-serif;
+            font-family: 'Ubuntu Mono', monospace;
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url('img/bg.jpg');
+            background-size: 1950px 1060px;
+        }
+
+        .left {
+            display: inline-block;
+            position: absolute;
+            top: 18px;
+            left: 60px;
+
+        }
+
+        .left div {
+            text-align: center;
+        }
+
+        .left img {
+            width: 96px;
+            filter: invert(100%);
+            border-radius: 10px;
+            /* filter: invert(100%); */
+        }
+
+        .mid {
+            display: block;
+            width: 43%;
+            margin-left: 303px;
+            margin-top: 18px;
+        }
+
+        .right {
+            display: inline-block;
+            position: absolute;
+            top: 18px;
+            right: 35px;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 20px;
+        }
+
+        .navbar li a {
+            color: antiquewhite;
+            text-decoration: none;
+            padding: 35px 25px;
+        }
+
+        .navbar li a:hover {
+            text-decoration: underline;
+            color: rgb(176, 193, 193);
+            font-weight: 550;
+        }
+
+        .btn {
+            cursor: pointer;
+            border: 2px solid rgb(55, 55, 100);
+            border-radius: 10px;
+            margin: 0px 5px;
+            padding: 5px 15px;
+            background-color: black;
+            color: aliceblue;
+            font-size: 20px;
+            font-family: 'Dongle', sans-serif;
+            font-family: 'Fira Sans', sans-serif;
+            font-family: 'Roboto', sans-serif;
+            font-family: 'Ubuntu Mono', monospace;
+        }
+
+        .btn:hover {
+            background-color: antiquewhite;
+            color: crimson;
+        }
+
+        .container {
+            border: 2px solid white;
+            margin: 80px 52px;
+            padding: 80px;
+            width: 33%;
+            border-radius: 33px;
+        }
+
+        .form-group input {
+            display: block;
+            font-size: 15px;
+            width: 300px;
+            margin: 11px auto;
+            padding: 10px;
+            border: 2px solid #1d3557;
+            border-radius: 15px;
+            text-align: center;
+            color: #003566;
+            font-family: 'Dongle', sans-serif;
+            font-family: 'Fira Sans', sans-serif;
+            font-family: 'Roboto', sans-serif;
+            font-family: 'Ubuntu Mono', monospace;
+
+        }
+
+        .form-group select {
+            display: block;
+            font-size: 15px;
+            width: 300px;
+            margin: 15px auto;
+            padding: 10px;
+            border: 2px solid #1d3557;
+            border-radius: 15px;
+            text-align: center;
+            color: #003566;
+            font-family: 'Dongle', sans-serif;
+            font-family: 'Fira Sans', sans-serif;
+            font-family: 'Roboto', sans-serif;
+            font-family: 'Ubuntu Mono', monospace;
+        }
+
+        .container h1 {
+            text-align: center;
+        }
+
+        .container button {
+            display: block;
+            width: 83%;
+            margin: auto;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <!-- left box for logo -->
+            <img src="https://previews.123rf.com/images/lumut/lumut1808/lumut180801060/106821092-vector-object-and-icons-for-sport-label-gym-badge-fitness-logo-design.jpg"
+                alt="logo">
+            <div>Fitness Club</div>
+        </div>
+        <div class="mid">
+            <!-- mid box for nav bar -->
+            <ul class="navbar">
+                <li><a href="#">Home</a> </li>
+                <li><a href="#">About Us</a> </li>
+                <li><a href="#">Contact Us</a> </li>
+                <li><a href="#">Services</a> </li>
+            </ul>
+
+        </div>
+        <div class="right">
+            <!-- right box for buttons -->
+            <button class="btn">Call Us Now</button>
+            <button class="btn">E-mail Us Now</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best Gym of Sinhagad Road Now !!!</h1>
+        <form action="#">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <select name="">
+                    <option value="">Select your gender</option>
+                    <option value="">Male</option>
+                    <option value="">Female</option>
+                    <option value="">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <input type="number" name="" placeholder="Enter your Phone Number">
+            </div>
+            <div class="form-group">
+                <input type="email" name="" placeholder="Enter your E-mail address">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your address">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
